@@ -18,12 +18,6 @@
   margin-left: auto;
 }
 
-.addButton:disabled {
-  background-color: lightgray;
-  cursor: no-drop;
-  border-color: transparent;
-}
-
 .addButton:hover {
   background-color: var(--colors-hover);
   transition: background-color 100ms;
@@ -31,6 +25,12 @@
 
 .addButton:active {
   background-color: var(--colors-active);
+}
+
+.addButton:disabled {
+  background-color: lightgray;
+  cursor: no-drop;
+  border-color: transparent;
 }
 
 @media (max-width: 1200px) {
