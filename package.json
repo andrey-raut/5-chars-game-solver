@@ -16,7 +16,7 @@
     "compile": "tsc && vite build",
     "build": "npm run clearBuild && npm run compile",
     "preview": "vite preview",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && node preGithubPagesDeploy.cjs",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
