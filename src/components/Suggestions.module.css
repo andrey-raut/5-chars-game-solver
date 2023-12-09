@@ -1,0 +1,42 @@
+.suggestionsContainer {
+  height: 1px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.suggestionsTitle {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.scrollWrapper {
+  flex-grow: 1;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.scrollContainer {
+  list-style: none;
+}
+
+.suggestionItem {
+  text-transform: capitalize;
+  padding-block: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 300ms;
+}
+
+.suggestionItem:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+
+.suggestionItem:hover {
+  background-color: var(--colors-hover);
+  transition: background-color 100ms;
+}
+
+.suggestionItem:active {
+  background-color: var(--colors-active);
+}

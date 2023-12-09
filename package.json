@@ -1,0 +1,31 @@
+{
+  "name": "five-chars",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "description": "Tiny appplication to win in the Tinkoff's \"5 chars\" game",
+  "author": {
+    "email": "andrey.raut@gmail.com",
+    "name": "Andrey Raut",
+    "url": "https://github.com/andrey-raut"
+  },
+  "scripts": {
+    "start": "vite",
+    "clearBuild": "rm -rf build",
+    "compile": "tsc && vite build",
+    "build": "npm run clearBuild && npm run compile",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "dependencies": {
+    "@preact/signals": "^1.2.2",
+    "preact": "^10.19.1"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.6.0",
+    "gh-pages": "^6.1.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  }
+}

@@ -1,0 +1,28 @@
+.pageContainer {
+  padding: 30px 15px;
+  min-height: 100%;
+  height: 1px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.pageTitle {
+  margin: 0 auto;
+  width: max-content;
+  margin-bottom: 20px;
+  color: var(--colors-primary-main);
+}
+
+.mainContentWrapper {
+  display: grid;
+  gap: 40px;
+  flex-grow: 1;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 1200px) {
+  .mainContentWrapper {
+    display: block;
+  }
+}

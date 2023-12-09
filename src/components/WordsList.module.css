@@ -1,0 +1,48 @@
+.wordsListContainer {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+}
+
+.addButton {
+  margin-top: 40px;
+  font-size: 30px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 5px 20px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 300ms;
+  margin-left: auto;
+}
+
+.addButton:disabled {
+  background-color: lightgray;
+  cursor: no-drop;
+  border-color: transparent;
+}
+
+.addButton:hover {
+  background-color: var(--colors-hover);
+  transition: background-color 100ms;
+}
+
+.addButton:active {
+  background-color: var(--colors-active);
+}
+
+@media (max-width: 1200px) {
+  .wordsListContainer {
+    margin-inline: auto;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .addButton {
+    margin-inline: auto;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,9 @@
+.wordContainer {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.wordContainer:not(:last-of-type) {
+  margin-bottom: 20px;
+}
